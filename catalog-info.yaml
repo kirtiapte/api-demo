@@ -68,6 +68,24 @@ kind: API
 metadata:
   name: demo-api
   description: The demo API for Tanzu Application Platform GUI
+  apiscores:
+    scores:
+    - id: documentationReport
+      label: "Documentation Health"
+      value: 34.375
+      valueType: percentage
+      status: failed
+    - id: securityReport
+      label: "Security Score"
+      value: 70.0
+      valueType: percentage
+      status: warning
+    - id: openApiHealthReport
+      label: "OpenAPI Health"
+      value: 89.0625
+      valueType: percentage
+      status: passed
+    scoreDetailsURL:  VALIDATION-REPORT-URL-FOR-MORE-DETAILS
   links:
     - url: https://api.agify.io
       title: API Definition
